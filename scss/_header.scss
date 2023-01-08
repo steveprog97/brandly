@@ -1,0 +1,41 @@
+@import "vars";
+
+.header {
+  padding: 16px 0;
+
+  &__nav-item + &__nav-item {
+    margin-left: 53px;
+  }
+
+  &__nav-link {
+    font-family: $secondary-font;
+    line-height: 18px;
+    text-transform: capitalize;
+    color: $accent;
+
+    &:hover {
+      color: lighten($accent, 20%);
+    }
+  }
+
+  &__nav-toggler {
+    border: 1px solid $accent;
+    padding: 5px 8px;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    path {
+      fill: $accent;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header {
+    &__nav-item + &__nav-item {
+      margin-left: 0;
+    }
+  }
+}

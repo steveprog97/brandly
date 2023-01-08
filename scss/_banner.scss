@@ -1,0 +1,58 @@
+@import "vars";
+
+.banner {
+  min-height: 544px;
+  padding-top: 140px;
+  padding-bottom: 89px;
+  color: $light;
+  background-image: url("../images/banner-bg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__title {
+    margin: 0 0 45px 0;
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    margin: 0 0 45px 0;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+
+  &__btn {
+    border-color: $light;
+    color: inherit;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $accent;
+      border-color: $accent;
+      color: inherit;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .banner {
+    &__title {
+      letter-spacing: 0.2em;
+      font-size: 25px;
+    }
+
+    &__info {
+      font-size: 35px;
+    }
+  }
+}

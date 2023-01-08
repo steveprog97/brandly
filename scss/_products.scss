@@ -1,0 +1,70 @@
+@import "vars";
+
+.products {
+  .card {
+    margin-bottom: 2em;
+  }
+
+  .card-body {
+    position: relative;
+  }
+  
+  .card-title {
+    background-color: $accent;
+    padding: 1.5em 1em;
+    position: absolute;
+    bottom: 50%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    
+    a {
+      display: block;
+      color: $light;
+      text-decoration: none;
+    }
+  }
+
+  .card-fav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    border: none;
+    background-color: $accent;
+    cursor: pointer;
+
+    &:active {
+      background-color: blue;
+    }
+
+    &:hover {
+      background-color: lighten($accent, 20%);
+    }
+
+    path {
+      fill: $light;
+    }
+  }
+
+  .card-price {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $accent;
+    padding: 1em;
+    color: $light;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 350px;
+  }
+
+  &__pagination {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+}

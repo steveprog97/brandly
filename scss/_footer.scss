@@ -1,0 +1,24 @@
+@import "vars";
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 157px;
+  background-image: url("../images/footer-img.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $light;
+
+  p {
+    margin: 0;
+    font-family: $secondary-font;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: capitalize;
+    
+  }
+}

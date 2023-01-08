@@ -1,0 +1,72 @@
+@import "vars";
+
+body {
+  font-family: $main-font;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 37, 51, 0.4);
+    z-index: -1;
+  }
+}
+
+.btn {
+  font-family: $main-font;
+  text-transform: uppercase;
+  padding: 20px 55px;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 18px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $dark;
+  border-radius: 0;
+}
+
+.section-title {
+  text-align: center;
+  position: relative;
+  margin: 0 0 60px 0;
+  padding: 28px 0 32px;
+  font-family: $secondary-font;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: $dark;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 115px;
+    height: 3px;
+    background-color: $accent;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 115px;
+    height: 3px;
+    background-color: $accent;
+    content: "";
+  }
+}
